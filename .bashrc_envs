@@ -1,0 +1,51 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+export RBENV_ROOT="${HOME}/.rbenv"
+
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
+
+# Redis & RocksDB
+export SR2_DATA_ROOT="/nvme"
+export SR2_DATA_DIR="data_"
+export SR2_REDIS_DATA="${SR2_DATA_ROOT}/${SR2_DATA_DIR}"
+export SR2_REDIS_DB_PATH="${SR2_DATA_ROOT}/${SR2_DATA_DIR}"
+export SR2_FLASH_DB_PATH="${SR2_DATA_ROOT}/${SR2_DATA_DIR}"
+
+# Java
+export JAVA_HOME=/opt/jdk1.8.0_201
+export JRE_HOME=/opt/jdk1.8.0_201/jre
+export PATH=$PATH:/opt/jdk1.8.0_201/bin:/opt/jdk1.8.0_201/jre/bin
+
+# Hadoop
+export HADOOP_HOME=/opt/hadoop
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+export LD_LIBRARY_PATH=${HADOOP_HOME}/lib/native:${LD_LIBRARY_PATH}
+
+# Spark
+export SPARK_HOME=/opt/spark
+export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+
+# Zeppelin
+export ZEPPELIN_HOME=/opt/zeppelin
+export PATH=$PATH:$ZEPPELIN_HOME/bin
+
+# MKL lib
+source /opt/intel/mkl/bin/mklvars.sh intel64
+
+# FBCLI tool
+export FBPATH=$HOME/.flashbase

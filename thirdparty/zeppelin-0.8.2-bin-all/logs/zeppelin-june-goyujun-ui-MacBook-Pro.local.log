@@ -1,0 +1,47 @@
+ INFO [2020-01-02 14:55:26,729] ({Thread-13} ZeppelinServer.java[run]:253) - Shutting down Zeppelin Server ... 
+ INFO [2020-01-02 14:55:26,881] ({Thread-13} AbstractConnector.java[doStop]:341) - Stopped ServerConnector@41853299{HTTP/1.1,[http/1.1]}{127.0.0.1:8080}
+ INFO [2020-01-02 14:55:26,882] ({Thread-13} HouseKeeper.java[stopScavenging]:167) - node0 Stopped scavenging
+ INFO [2020-01-02 14:55:26,957] ({Thread-13} ContextHandler.java[doStop]:1045) - Stopped o.e.j.w.WebAppContext@13acb0d1{zeppelin-web,/,null,UNAVAILABLE}{/Users/june/AWS-automation/AMI-Builder_repo/flashbase/thirdparty/zeppelin-0.8.2-bin-all/zeppelin-web-0.8.2.war}
+ INFO [2020-01-02 14:55:26,960] ({Thread-22} InterpreterSetting.java[close]:483) - Close InterpreterSetting: ignite
+ INFO [2020-01-02 14:55:26,961] ({Thread-26} InterpreterSetting.java[close]:483) - Close InterpreterSetting: jdbc
+ INFO [2020-01-02 14:55:26,961] ({Thread-21} InterpreterSetting.java[close]:483) - Close InterpreterSetting: ignite
+ INFO [2020-01-02 14:55:26,960] ({Thread-23} InterpreterSetting.java[close]:483) - Close InterpreterSetting: python
+ INFO [2020-01-02 14:55:26,964] ({Thread-29} InterpreterSetting.java[close]:483) - Close InterpreterSetting: flink
+ INFO [2020-01-02 14:55:26,963] ({Thread-27} InterpreterSetting.java[close]:483) - Close InterpreterSetting: lens
+ INFO [2020-01-02 14:55:26,967] ({Thread-34} InterpreterSetting.java[close]:483) - Close InterpreterSetting: lens
+ INFO [2020-01-02 14:55:26,963] ({Thread-25} InterpreterSetting.java[close]:483) - Close InterpreterSetting: sap
+ INFO [2020-01-02 14:55:26,967] ({Thread-36} InterpreterSetting.java[close]:483) - Close InterpreterSetting: pig
+ INFO [2020-01-02 14:55:26,963] ({Thread-30} InterpreterSetting.java[close]:483) - Close InterpreterSetting: sap
+ INFO [2020-01-02 14:55:26,963] ({Thread-24} InterpreterSetting.java[close]:483) - Close InterpreterSetting: python
+ INFO [2020-01-02 14:55:26,969] ({Thread-43} InterpreterSetting.java[close]:483) - Close InterpreterSetting: cassandra
+ INFO [2020-01-02 14:55:26,969] ({Thread-41} InterpreterSetting.java[close]:483) - Close InterpreterSetting: sh
+ INFO [2020-01-02 14:55:26,968] ({Thread-40} InterpreterSetting.java[close]:483) - Close InterpreterSetting: elasticsearch
+ INFO [2020-01-02 14:55:26,967] ({Thread-33} InterpreterSetting.java[close]:483) - Close InterpreterSetting: livy
+ INFO [2020-01-02 14:55:26,967] ({Thread-32} InterpreterSetting.java[close]:483) - Close InterpreterSetting: angular
+ INFO [2020-01-02 14:55:26,967] ({Thread-39} InterpreterSetting.java[close]:483) - Close InterpreterSetting: groovy
+ INFO [2020-01-02 14:55:26,967] ({Thread-37} InterpreterSetting.java[close]:483) - Close InterpreterSetting: file
+ INFO [2020-01-02 14:55:26,967] ({Thread-35} InterpreterSetting.java[close]:483) - Close InterpreterSetting: neo4j
+ INFO [2020-01-02 14:55:26,966] ({Thread-31} InterpreterSetting.java[close]:483) - Close InterpreterSetting: jdbc
+ INFO [2020-01-02 14:55:26,966] ({Thread-28} InterpreterSetting.java[close]:483) - Close InterpreterSetting: pig
+ INFO [2020-01-02 14:55:26,976] ({Thread-56} InterpreterSetting.java[close]:483) - Close InterpreterSetting: cassandra
+ INFO [2020-01-02 14:55:26,976] ({Thread-55} InterpreterSetting.java[close]:483) - Close InterpreterSetting: sh
+ INFO [2020-01-02 14:55:26,974] ({Thread-54} InterpreterSetting.java[close]:483) - Close InterpreterSetting: elasticsearch
+ INFO [2020-01-02 14:55:26,974] ({Thread-53} InterpreterSetting.java[close]:483) - Close InterpreterSetting: groovy
+ INFO [2020-01-02 14:55:26,974] ({Thread-52} InterpreterSetting.java[close]:483) - Close InterpreterSetting: file
+ INFO [2020-01-02 14:55:26,974] ({Thread-48} InterpreterSetting.java[close]:483) - Close InterpreterSetting: neo4j
+ INFO [2020-01-02 14:55:26,974] ({Thread-50} InterpreterSetting.java[close]:483) - Close InterpreterSetting: hbase
+ INFO [2020-01-02 14:55:26,972] ({Thread-51} InterpreterSetting.java[close]:483) - Close InterpreterSetting: kylin
+ INFO [2020-01-02 14:55:26,971] ({Thread-45} InterpreterSetting.java[close]:483) - Close InterpreterSetting: livy
+ INFO [2020-01-02 14:55:26,971] ({Thread-49} InterpreterSetting.java[close]:483) - Close InterpreterSetting: bigquery
+ INFO [2020-01-02 14:55:26,971] ({Thread-47} InterpreterSetting.java[close]:483) - Close InterpreterSetting: alluxio
+ INFO [2020-01-02 14:55:26,971] ({Thread-44} InterpreterSetting.java[close]:483) - Close InterpreterSetting: spark
+ INFO [2020-01-02 14:55:26,971] ({Thread-46} InterpreterSetting.java[close]:483) - Close InterpreterSetting: md
+ INFO [2020-01-02 14:55:26,970] ({Thread-38} InterpreterSetting.java[close]:483) - Close InterpreterSetting: flink
+ INFO [2020-01-02 14:55:26,969] ({Thread-42} InterpreterSetting.java[close]:483) - Close InterpreterSetting: angular
+ INFO [2020-01-02 14:55:26,978] ({Thread-59} InterpreterSetting.java[close]:483) - Close InterpreterSetting: alluxio
+ INFO [2020-01-02 14:55:26,978] ({Thread-61} InterpreterSetting.java[close]:483) - Close InterpreterSetting: hbase
+ INFO [2020-01-02 14:55:26,978] ({Thread-60} InterpreterSetting.java[close]:483) - Close InterpreterSetting: bigquery
+ INFO [2020-01-02 14:55:26,978] ({Thread-57} InterpreterSetting.java[close]:483) - Close InterpreterSetting: spark
+ INFO [2020-01-02 14:55:26,977] ({Thread-62} InterpreterSetting.java[close]:483) - Close InterpreterSetting: kylin
+ INFO [2020-01-02 14:55:26,977] ({Thread-58} InterpreterSetting.java[close]:483) - Close InterpreterSetting: md
+ INFO [2020-01-02 14:55:26,988] ({Thread-13} NotebookRepoSync.java[close]:428) - Closing all notebook storages

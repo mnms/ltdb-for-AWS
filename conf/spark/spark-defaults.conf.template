@@ -1,0 +1,60 @@
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# Default system properties included when running spark-submit.
+# This is useful for setting default environmental settings.
+:
+# Example:
+# spark.master                     spark://master:7077
+# spark.eventLog.enabled           true
+# spark.eventLog.dir               hdfs://namenode:8021/directory
+# spark.serializer                 org.apache.spark.serializer.KryoSerializer
+# spark.driver.memory              5g
+# spark.executor.extraJavaOptions  -XX:+PrintGCDetails -Dkey=value -Dnumbers="one two three"
+
+spark.scheduler.mode                    FAIR
+spark.driver.memory                     4g
+spark.kryoserializer.buffer.max         2047m
+spark.driver.maxResultSize              1g
+spark.local.dir                         /nvme/data_01
+hive.server2.thrift.port       13100
+
+spark.serializer org.apache.spark.serializer.KryoSerializer
+spark.memory.offHeap.size 1g
+spark.memory.offHeap.enabled true
+
+spark.io.compression.codec lz4
+spark.rdd.compress true
+spark.cores.max 20
+
+spark.ui.enabled true
+spark.ui.retainedJobs 20
+spark.ui.retainedStages 20
+spark.ui.retainedTasks 1000000
+
+spark.worker.ui.retainedExecutors 100
+spark.worker.ui.retainedDrivers 100
+spark.sql.ui.retainedExecutions 100
+
+spark.eventLog.enabled true
+spark.eventLog.dir file:///nvdrive0/spark/event-logs
+
+spark.history.fs.logDirectory file:///nvme/data_01/spark/event-logs
+
+spark.sql.shuffle.partitions 250
+spark.sql.hive.thriftServer.singleSession true
+spark.local.dir /nvme/data_01

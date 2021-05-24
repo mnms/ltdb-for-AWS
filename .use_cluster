@@ -1,0 +1,20 @@
+#!/bin/bash
+
+## set cluster-#{NUM} path
+export SR2_HOME=${HOME}/tsr2/cluster_$1/tsr2-assembly-1.0.0-SNAPSHOT
+export TSR2_HOME=${HOME}/tsr2/cluster_$1/tsr2-assembly-1.0.0-SNAPSHOT
+export NVKVS_MANAGER_HOME=${HOME}/tsr2/cluster_$1/nv-kvs-manager
+
+source ${HOME}/.bashrc
+
+echo $PATH | grep ${SR2_HOME} > /dev/null
+RET=$?
+if [[ $RET -eq 1 ]]; then
+    PATH=$SR2_HOME/bin:$SR2_HOME/sbin:$PATH
+fi
+
+echo $PATH | grep ${NVKVS_MANAGER_HOME} > /dev/null
+RET=$?
+if [[ $RET -eq 1 ]]; then
+    PATH=$NVKVS_MANAGER_HOME/bin:$PATH
+fi

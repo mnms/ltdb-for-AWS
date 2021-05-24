@@ -1,0 +1,41 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# alias
+alias cfc='source ~/.use_cluster'
+alias fb='flashbase'
+
+# Java
+export JAVA_HOME=/opt/jdk1.8.0_201
+export JRE_HOME=/opt/jdk1.8.0_201/jre
+export PATH=$PATH:/opt/jdk1.8.0_201/bin:/opt/jdk1.8.0_201/jre/bin
+
+# Hadoop
+export HADOOP_HOME=/opt/hadoop
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+export LD_LIBRARY_PATH=${HADOOP_HOME}/lib/native:${LD_LIBRARY_PATH}
+
+# Spark
+export SPARK_HOME=/opt/spark
+export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+
+# HIVE
+export HIVE_HOME=${HOME}/apache-hive-1.2.1-bin
+export PATH=${PATH}:${HIVE_HOME}/bin
+
+# ZEPPELIN
+export ZEPPELIN_HOME=${HOME}/zeppelin-0.7.3-bin-all
+export PATH=${PATH}:${ZEPPELIN_HOME}/bin
+
+# LIVY
+export LIVY_HOME=${HOME}/livy-0.5.0-incubating-bin
+export PATH=${PATH}:${LIVY_HOME}/bin
+
+# MKL lib 
+source /opt/intel/mkl/bin/mklvars.sh intel64

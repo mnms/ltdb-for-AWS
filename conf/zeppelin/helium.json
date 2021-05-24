@@ -1,0 +1,9 @@
+{
+  "enabled": {
+    "zeppelin-leaflet": "zeppelin-leaflet@1.0.4"
+  },
+  "packageConfig": {},
+  "bundleDisplayOrder": [
+    "zeppelin-leaflet"
+  ]
+}
